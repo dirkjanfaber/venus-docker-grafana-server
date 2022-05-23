@@ -4,7 +4,7 @@ EXPOSE 8088/TCP
 
 COPY venus-docker-grafana-server-2.4.1.tgz /tmp/
 
-RUN npm install -g --unsafe-perm /tmp/venus-docker-grafana-server-2.4.1.tgz && rm /tmp/venus-docker-grafana-server-2.4.1.tgz
+RUN npm install -g --unsafe-perm venus-docker-grafana-server@2.4.1
 
 RUN mkdir /config
 
